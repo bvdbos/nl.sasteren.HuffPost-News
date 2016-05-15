@@ -56,7 +56,7 @@ exports.init = function() {
 		// app.json
 		speech.triggers.forEach(function(trigger) {
 			// Check if the newsheadline trigger is triggered
-			if (trigger.id === 'newsheadline') {
+			if (trigger.id === 'readhuffnews') {
 				// Read the news
 				// Download news headlines in JSON format,
 				// and formulate the news headlines
