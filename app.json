@@ -1,0 +1,56 @@
+{
+	"id": "nl.sasteren.huffpost-news",
+	"name": {
+		"nl": "HuffPost Headlines",
+		"en": "HuffPost Headlines"
+	},
+	"version": "0.1.5",
+	"compatibility": "0.x || 1.x",
+	"author": {
+		"name": "Bas van den Bosch",
+		"email": "info@sasteren.nl",
+		"website": "http://www.sasteren.nl"
+	},
+	"flow": {
+		"actions": [{
+			"id": "read HuffPo News",
+			"title": {
+				"en": "Read the HuffPo news",
+				"nl": "Lees het HuffPo nieuws"
+			}
+		}]
+	},
+	"contributors": {
+		"developers": [{
+			"name": "Matjaž Lipuš",
+			"website": "http://matjaz.info",
+			"email": "matjazl@gmail.com"
+		}, {
+			"name": "Christian Versloot",
+			"email": "mail@christianversloot.nl",
+			"website": "https://github.com/chrisv95/nl.webchitect.newsheadlines"
+		}, {
+			"name": "Marco van 't Klooster",
+			"email": "info@marcovantklooster.nl",
+			"website": "http://www.marcovantklooster.nl"		
+		}]
+	},
+	"images": {
+		"large": "./assets/images/large.jpg",
+		"small": "./assets/images/small.jpg"
+	},
+	"permissions": ["homey:manager:speech-input", "homey:manager:speech-output"],
+	"description": {
+		"nl": "Deze app verteld je het recente nieuws van de Huffington Post",
+		"en": "This app tells you the most recent Huffington Post news headlines."
+	},
+	"speech": [{
+		"id": "newsheadline",
+		"importance": 0.8,
+		"triggers": {
+			"nl": ["huffpo", "huffington post", "huffington"],
+			"en": ["huffpo", "huffington post", "huffington"]
+		}
+	}],
+	"category": "internet"
+}
