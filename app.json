@@ -13,7 +13,7 @@
 	},
 	"flow": {
 		"actions": [{
-			"id": "read HuffPo News",
+			"id": "readNews",
 			"title": {
 				"en": "Read the HuffPo news",
 				"nl": "Lees het HuffPo nieuws"
@@ -45,7 +45,7 @@
 		"en": "This app tells you the most recent Huffington Post news headlines."
 	},
 	"speech": [{
-		"id": "newsheadline",
+		"id": "readhuffnews",
 		"importance": 0.8,
 		"triggers": {
 			"nl": ["huffpo", "huffington post", "huffington"],
