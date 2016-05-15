@@ -9,6 +9,7 @@ OK, Homey...
 * Huffington
 * Huffington Post
 * Huffpo
+* Huffpost
 
 # Remarks:
 * Based on the NOS feed / App
