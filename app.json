@@ -1,8 +1,8 @@
 {
 	"id": "nl.sasteren.huffpost-news",
 	"name": {
-		"nl": "HuffPost Headlines",
-		"en": "HuffPost Headlines"
+		"nl": "Huffington Post Headlines",
+		"en": "Huffington Post Headlines"
 	},
 	"version": "0.1.5",
 	"compatibility": "0.x || 1.x",
@@ -15,8 +15,8 @@
 		"actions": [{
 			"id": "readNews",
 			"title": {
-				"en": "Read the HuffPo news",
-				"nl": "Lees het HuffPo nieuws"
+				"en": "Read the Huffington Post news",
+				"nl": "Lees het Huffington Post nieuws"
 			}
 		}]
 	},
@@ -48,8 +48,8 @@
 		"id": "readhuffnews",
 		"importance": 0.8,
 		"triggers": {
-			"nl": ["huffpo", "huffington post", "huffington"],
-			"en": ["huffpo", "huffington post", "huffington"]
+			"nl": ["huffpo", "huffington post", "huffington", "huffpost"],
+			"en": ["huffpo", "huffington post", "huffington", "huffpost"]
 		}
 	}],
 	"category": "internet"
