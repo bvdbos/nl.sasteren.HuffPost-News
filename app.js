@@ -20,10 +20,12 @@ exports.init = function() {
 				// Concatenate everything
 				var newsHeadlines = [];
 				var maxNews = Homey.manager('settings').get('numberOfNewsArticles');
+				Homey.log('max number of items is ' + maxNews);
 				maxNews = (maxNews > 20 ? 20 : (maxNews < 1 ? 1 : maxNews)); // Minimum of 1 article, maximum of 20 articles (~source limit)
 				newsHeadlines.push(__('app.speechPrefix'));
 				for (var i = 0; i < maxNews; i++) {
 					var title = data.responseData.feed.entries[i].title;
+					
 					if (title[title.length - 1] === ".") {
 						title = title.slice(0, -1);
 					}
@@ -32,17 +34,21 @@ exports.init = function() {
 						content = content.slice(0, -1);
 					}
 					if (title.length > 0 && content.length > 0) {
-						newsHeadlines.push(headlineKeywords[i] + '. ' + title + '. ' + content + '........ ');
+						//newsHeadlines.push(headlineKeywords[i] + '. ' + title + '. ' + content + '........ ');
+						//content doesn't work for Huffpost
+						newsHeadlines.push(headlineKeywords[i] + '. ' + title + '........ ');
 					}
 					title = null;
 					content = null;
 				}
 				// Spread the word
 				for (var i = 0; i < newsHeadlines.length; i++) {
+					Homey.log(newsHeadlines[i]);
 					Homey.manager('speech-output').say(__(newsHeadlines[i]));
 				}
 				callback(null, true);
 			} else {
+									Homey.manager('speech-output').say("No news today");
 				callback(null, false);
 			}
 		});
@@ -66,6 +72,7 @@ exports.init = function() {
 						// Concatenate everything
 						var newsHeadlines = [];
 						var maxNews = Homey.manager('settings').get('numberOfNewsArticles');
+						Homey.log('max number of items is ' + maxNews);
 						maxNews = (maxNews > 20 ? 20 : (maxNews < 1 ? 1 : maxNews)); // Minimum of 1 article, maximum of 20 articles (~source limit)
 						newsHeadlines.push(__('app.speechPrefix'));
 						for (var i = 0; i < maxNews; i++) {
@@ -78,13 +85,16 @@ exports.init = function() {
 								content = content.slice(0, -1);
 							}
 							if (title.length > 0 && content.length > 0) {
-								newsHeadlines.push(headlineKeywords[i] + '. ' + title + '. ' + content + '........ ');
+						//newsHeadlines.push(headlineKeywords[i] + '. ' + title + '. ' + content + '........ ');
+						//content doesn't work for Huffpost
+						newsHeadlines.push(headlineKeywords[i] + '. ' + title + '........ ');
 							}
 							title = null;
 							content = null;
 						}
 						// Spread the word
 						for (var i = 0; i < newsHeadlines.length; i++) {
+							Homey.log(newsHeadlines[i]);
 							Homey.manager('speech-output').say(__(newsHeadlines[i]));
 						}
 					}
