@@ -15,4 +15,4 @@ OK, Homey...
 * Based on the [NOS feed / App](https://github.com/kerkenit/nl.nos.newsheadlines)
 * American Newsfeed
 * We really should figure out how to deal with multiple news-sources, [forum](https://forum.athom.com/discussion/1458/multiple-news-apps)
-* Doesn't work through the phone-app (yet)
+* Doesn't work through the [phone-app](https://play.google.com/store/apps/details?id=com.athom.homey&hl=nl) (yet)
