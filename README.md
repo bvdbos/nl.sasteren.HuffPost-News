@@ -16,3 +16,8 @@ OK, Homey...
 * American Newsfeed
 * We really should figure out how to deal with multiple news-sources, [forum](https://forum.athom.com/discussion/1458/multiple-news-apps)
 * Doesn't work through the [phone-app](https://play.google.com/store/apps/details?id=com.athom.homey&hl=nl) (yet)
+ 
+# Version 0.2 - included upstream changes
+* include body text
+* break at end of line if too long
+* replace abbreviations
