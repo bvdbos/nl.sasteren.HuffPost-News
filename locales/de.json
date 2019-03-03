@@ -1,0 +1,83 @@
+{
+	"settings": {
+		"page": {
+			"title": "HuffPo Headlines",
+			"description": "Auf dieser Seite kannst Du die Einstellungen der HuffPo Headlines App anpassen"
+		},
+		"controls": {
+			"legend": "Einstellungen",
+			"label": "Anzahl der News Artikel (max 20)",
+			"save": "Speichern"
+		},
+		"success": "Änderungen gespeichert",
+		"error": {
+			"error": "Fehler",
+			"trueHigh": "Du hast zu viele News Artikel ausgewählt. Das Maximum sind 20 Artikel.",
+			"trueLow": "Du hast zu wenige News Artikel ausgewählt. Das Minimum ist 1 Artikel.",
+			"noInt": "Du hast keine gültige Zahl eingegeben. Du musst eine Zahl zwischen 1 und 20 eingeben."
+		}
+	},
+	"app": {
+		"speechPrefix": "Deine letzten News Schlagzeilen.",
+		"numbers": {
+			"one": "Eins",
+			"two": "Zwei",
+			"three": "Drei",
+			"four": "Vier",
+			"five": "Fünf",
+			"six": "Sechs",
+			"seven": "Sieben",
+			"eight": "Acht",
+			"nine": "Neun",
+			"ten": "Zehn",
+			"eleven": "Elf",
+			"twelve": "Zwölf",
+			"thirteen": "Dreizehn",
+			"fourteen": "Vierzehn",
+			"fiveteen": "Fünfzehn",
+			"sixteen": "Sechzehn",
+			"seventeen": "Siebzehn",
+			"eightteen": "Achzehn",
+			"nineteen": "Neunzehn",
+			"twenty": "Zwanzig"
+		},
+		"findandreplace": {
+			"kmph": {
+				"find": "km/h",
+				"replace": "Kilometer pro Stunde"
+			},
+			"mph": {
+				"find": "mph",
+				"replace": "Meilen pro Stunde"
+			},
+			"co2": {
+				"find": "CO2",
+				"replace": "C O 2"
+			},
+			"rivm": {
+				"find": "RIVM",
+				"replace": "R I V M"
+			},
+			"om": {
+				"find": "OM",
+				"replace": "O M"
+			},
+			"rdw": {
+				"find": "RDW",
+				"replace": "R D W"
+			},
+			"who": {
+				"find": "WHO",
+				"replace": "W H O"
+			},
+			"bbc": {
+				"find": "BBC",
+				"replace": "B B C"
+			},
+			"youp": {
+				"find": "Youp",
+				"replace": "Youp"
+			}
+		}
+	}
+}
