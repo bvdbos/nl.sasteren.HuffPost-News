@@ -2,6 +2,7 @@
 	"id": "nl.sasteren.huffpost-news",
 	"name": {
 		"nl": "Huffington Post Headlines",
+		"de": "Huffington Post Schlagzeilen",
 		"en": "Huffington Post Headlines"
 	},
 	"version": "0.2.0",
@@ -16,6 +17,7 @@
 			"id": "readNews",
 			"title": {
 				"en": "Read the Huffington Post news",
+				"de": "Lies die Huffington Post News",
 				"nl": "Lees het Huffington Post nieuws"
 			}
 		}]
@@ -42,7 +44,8 @@
 	"permissions": ["homey:manager:speech-input", "homey:manager:speech-output"],
 	"description": {
 		"nl": "Deze app verteld je het recente nieuws van de Huffington Post",
-		"en": "This app tells you the most recent Huffington Post news headlines."
+		"en": "This app tells you the most recent Huffington Post news headlines.",
+		"de": "Diese App bringt Dir die jüngsten Huffington Post News Schlagzeilen."
 	},
 	"speech": [{
 		"id": "readhuffnews",
